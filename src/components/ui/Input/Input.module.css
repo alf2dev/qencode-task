@@ -1,0 +1,33 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: -0.24%;
+  margin-bottom: 8px;
+}
+.inputBox {
+  display: flex;
+  position: relative;
+}
+.input {
+  border-radius: 8px;
+  border: 1.2px solid #d3d8dc;
+  padding: 14px 15px;
+  padding-right: 40px;
+  width: 100%;
+}
+.input:focus {
+  outline-color: #316fea;
+}
+.input::-webkit-input-placeholder {
+  color: #a1abb5;
+}
+.eyeIcon {
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 7px);
+}

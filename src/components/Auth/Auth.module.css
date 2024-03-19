@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+.logo {
+  height: 32px;
+  margin-bottom: 80px;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-gray);
+  margin-bottom: 40px;
+}
+.socialLogins {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.socialLogins button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 6px;
+  border: 1.2px solid #d3d8dc;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+}
+.socialLogins button img {
+  margin-right: 10px;
+}
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #bec5cc;
+  background-color: white;
+  overflow: hidden;
+}
+.separator:after,
+.separator:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #bec5cc;
+  top: calc(50% - 1px);
+  width: calc(50% - 14px);
+}
+.separator:after {
+  left: 0;
+}
+.separator:before {
+  right: 0;
+}
+.inputMargin {
+  margin-bottom: 30px;
+}
+.button {
+  border-radius: 8px;
+  border: 1.2px solid;
+  height: 48px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: -0.24%;
+}
+.login {
+  background-color: #316fea;
+  color: white;
+  border-color: #316fea;
+}
+.reverce {
+  background-color: white;
+  color: #060e1e;
+  border-color: #d3d8dc;
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp span:nth-child(1) {
+  font-size: 14px;
+  line-height: 20px;
+  color: #383838;
+  margin-right: 4px;
+}
+.signUp span:nth-child(2) {
+  font-size: 12px;
+  line-height: 16px;
+  color: #316fea;
+}
+.forgot {
+  color: #316fea;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: end;
+  cursor: pointer;
+}
+.forgot:hover {
+  opacity: 0.7;
+}
+.error input {
+  border-color: red;
+}
+.disabledButton {
+  opacity: 0.5;
+  cursor: inherit !important;
+}
+.disabledButton:hover {
+  opacity: 0.5 !important;
+}
+.resetError {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.testReset {
+  font-size: 14px;
+}
