@@ -20,7 +20,7 @@ export const Input = (props) => {
     }),
     []
   );
-  const iconProps = useMemo(() => iconsProps[type], [initType]);
+  const iconProps = useMemo(() => iconsProps[type], [iconsProps, type]);
   return (
     <div className={classNames(styles.inputContainer, className)}>
       {label && (

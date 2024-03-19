@@ -5,7 +5,6 @@ import { Button } from "../ui/Button";
 import styles from "./Auth.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-// ForgotPassword
 export default function ForgotPassword() {
   const passInputRef = useRef();
   const navigate = useNavigate();
